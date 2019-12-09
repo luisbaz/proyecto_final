@@ -49,4 +49,5 @@ def adding_flight_data(dic_flights):
         pass
 
     
-       
+def adding_traveller_data(dic_traveller):
+    traveller_option = str(input("Ingresa ('Y' o 'y') para registrar nuevos viajeros"))

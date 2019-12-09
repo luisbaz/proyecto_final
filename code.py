@@ -51,3 +51,28 @@ def adding_flight_data(dic_flights):
     
 def adding_traveller_data(dic_traveller):
     traveller_option = str(input("Ingresa ('Y' o 'y') para registrar nuevos viajeros"))
+    if traveller_option == 'Y' or traveller_option == 'y':
+        traveller_option[passport] = Traveller(passport,forename,surname,date_of_birth,country,gender,marital_status)
+        print("Has decidido registrar un nuevo pasaporte\n")
+        new_passport = str(input("Introduce el pasaporte"))
+        dic_traveller[passport] = new_passport
+
+        new_forename = str(input("Introduce el nombre"))
+        dic_traveller[passport].forename = new_forename
+
+        new_surname = str(input("Introduce el apellido"))
+        dic_traveller[passport].surname = new_surname
+
+        new_date_of_birth = str(input("Introduce la fecha de nacimiento"))
+        dic_traveller[passport].date_of_birth = new_date_of_birth
+
+        new_country = str(input("Introduce la ciudad"))
+        dic_traveller[passport].country = new_country
+
+        new_gender = str(input("Introduce el genero"))
+        dic_traveller[passport].gender = new_gender
+
+        new_marital_status = str(input("Introduce el estado marital"))
+        dic_traveller[passport].marital_status = new_marital_status
+    else:
+        pass
